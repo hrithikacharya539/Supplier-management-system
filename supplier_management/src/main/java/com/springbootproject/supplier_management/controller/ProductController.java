@@ -3,10 +3,12 @@ package com.springbootproject.supplier_management.controller;
 import com.springbootproject.supplier_management.model.Product;
 import com.springbootproject.supplier_management.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/products")
 public class ProductController {
